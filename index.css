@@ -205,10 +205,13 @@ section {
     color: white;
     text-align: center;
     letter-spacing: 2px;
+}
+.section_content {
     position: absolute;
     bottom: 100px;
     left: 50%;
     transform: translateX(-50%);
+    text-align: center;
 }
 .btn_hero_section{
     /* display: flex; */
