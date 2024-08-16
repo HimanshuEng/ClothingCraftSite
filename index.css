@@ -186,6 +186,9 @@ border-right:1px solid  #b9b9b9;
     text-align: center;
     padding: 55px 0px 55px 0px;
 }
+section {
+    position: relative;
+}
 .second_section{
     background: url(./Hero-01_7858bb31-290f-4fca-83b4-c14acec97ab9_1920x.webp);
     background-size: cover;
@@ -201,9 +204,11 @@ border-right:1px solid  #b9b9b9;
 .herotext{
     color: white;
     text-align: center;
-    padding: 690px 0px 0px 0px;
     letter-spacing: 2px;
-
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 .btn_hero_section{
     /* display: flex; */
