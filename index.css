@@ -227,7 +227,7 @@ label #btn,
         margin-left: 10px;
         cursor: pointer;
         display: none;
-        position: fixed;
+        position: absolute;
         top:20px;
         left:10px;
         z-index:2;
