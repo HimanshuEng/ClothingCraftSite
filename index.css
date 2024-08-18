@@ -313,16 +313,16 @@ section {
     position: absolute;
     bottom: 100px;
     left: 50%;
-    top: 70%;
+    top: 60%;
     transform: translateX(-50%);
     text-align: center;
 
 }
-.section_content1  {
+..section_content1  {
     position: absolute;
     bottom: 100px;
     left: 50%;
-    top: 70%;
+    top: 60%;
     transform: translateX(-50%);
     text-align: center;
 
@@ -331,7 +331,7 @@ section {
     position: absolute;
     bottom: 100px;
     left: 50%;
-    top: 70%;
+    top: 60%;
     transform: translateX(-50%);
     text-align: center;
 
@@ -340,7 +340,7 @@ section {
     position: absolute;
     bottom: 100px;
     left: 50%;
-    top: 70%;
+    top: 60%;
     transform: translateX(-50%);
     text-align: center;
 
@@ -349,7 +349,7 @@ section {
     position: absolute;
     bottom: 100px;
     left: 50%;
-    top: 70%;
+    top: 60%;
     transform: translateX(-50%);
     text-align: center;
 
@@ -358,7 +358,7 @@ section {
     position: absolute;
     bottom: 100px;
     left: 50%;
-    top: 70%;
+    top: 60%;
     transform: translateX(-50%);
     text-align: center;
 
@@ -367,7 +367,7 @@ section {
     position: absolute;
     bottom: 100px;
     left: 50%;
-    top: 70%;
+    top: 60%;
     transform: translateX(-50%);
     text-align: center;
 
@@ -376,7 +376,7 @@ section {
     position: absolute;
     bottom: 100px;
     left: 50%;
-    top: 70%;
+    top: 60%;
     transform: translateX(-50%);
     text-align: center;
 
