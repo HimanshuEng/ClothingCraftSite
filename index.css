@@ -1358,7 +1358,7 @@ padding: 10px 25px; /* Button padding for 944px */
 /* Media query for screens up to 768px */
 @media (max-width: 768px) {
 .third_section {
-margin-top:-23%;
+margin-top:-10%;
 height: 100vh;
 }
 
