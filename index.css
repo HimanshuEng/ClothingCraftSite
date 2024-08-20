@@ -256,7 +256,7 @@ label #btn,
 .quotesarea img {
     display: block; /* Remove inline spacing issues */
     margin: 0 auto; /* Center the image horizontally */
-    height: 50px; /* Adjust as needed */
+    height: 100px; /* Adjust as needed */
 }
 
 .quotesarea p {
