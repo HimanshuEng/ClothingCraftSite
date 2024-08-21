@@ -1,0 +1,541 @@
+h1 { font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; }
+h1 { font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; } h3 { font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 15.4px; } p { font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px; } blockquote { font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 30px; } pre { font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-size: 13px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 18.5714px; }
+h1 { font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; } h3 { font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 15.4px; } p { font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px; } blockquote { font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 30px; } pre { font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-size: 13px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 18.5714px; }
+h1 { font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; } h3 { font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 15.4px; } p { font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px; } blockquote { font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-size: 17.5px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 25px; } pre { font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-size: 13px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 18.5714px; }
+h1 { font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; } h3 { font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 15.4px; } p { font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px; } blockquote { font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-size: 17.5px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 25px; } pre { font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-size: 13px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 18.5714px; }
+
+body {
+    /* font-family: fut, sans-serif; */
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+
+
+nav {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: top 0.3s;
+    background-color: transparent;
+    text-align: center;
+    width: 100%;
+    padding: 12px 0px 7px 0px;
+    box-sizing: border-box;
+}
+
+nav .logo {
+    margin-bottom: 25px;
+    text-align: center;
+    margin-top: 0px;
+    padding-top: 0px;
+
+}
+
+nav .logo h1 {
+    color: #ffffff;
+    margin-top: 10px;
+    margin-bottom: 12px;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+nav .nav-links {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 9px;
+}
+nav ul li a {
+    
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+nav .line li a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 1.5px;
+    background: rgb(0, 0, 0);
+    margin-top: 20px;
+}
+
+nav .line li a:hover::after {
+    width: 100%;
+}
+
+nav:hover {
+    background-color: white;
+    transition: 0.5s;
+}
+
+nav:hover ul li a {
+    color: black; 
+}
+
+nav:hover ul li a::after {
+    background: black; 
+}
+
+nav:hover .logo h1 {
+    color: black;
+}
+
+
+/* drop downmenu */
+
+
+.mega-box {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    border-top: 1px solid #b9b9b9;
+    top: 140px;
+    opacity: 0;
+    visibility: hidden;
+
+}
+.content {
+    background: #ffffff;
+    padding: 25px 40px;
+    width: 100%;
+    height:500px;
+    max-height: 700px;
+    justify-content: space-between;
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+
+.main {
+width:260px;
+overflow: hidden; 
+text-overflow: ellipsis;
+border-right:1px solid  #b9b9b9;    
+}
+
+
+.maincontainer:active {
+    cursor: grabbing;
+}
+
+
+.maincontainer{
+    
+    cursor: grab;
+    scroll-behavior: smooth;
+    overflow-x: auto; 
+    overflow-y: auto;
+    display: flex;
+    gap: 2px; 
+    margin-left: 20%; 
+    margin-top: -29%;
+    height: 60vh;
+    overflow-y: hidden;
+    padding: 10px;
+    cursor: pointer;
+ 
+}
+.image-container{
+    display: inline-block; 
+    width: 250px;   
+    height: 300px; 
+    margin-left: 20px; /* Adds consistent spacing between each image container */
+    flex: 0 0 auto;
+    line-height: 100px; 
+     
+}
+.maincontainer::-webkit-scrollbar{
+    display: none;
+
+    width: 0;
+}
+
+.image-container:hover {
+    transform: scale(1.05); 
+}
+.image-container img {
+    
+    max-width: 100%; /* Ensure the image scales properly */
+    /* height: auto; */
+    margin-top: -9.5%;
+}
+
+.description {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #000000;
+}
+ 
+
+.main p {
+    color: #000000;
+    margin-left: -170px;
+    font-size: 15px;
+    
+
+}
+.main .mega-links li {
+    margin-left: 0px;
+}
+
+.main .mega-links li a{
+    left: -38px;
+    padding: 10px 0px 0px 0px ;
+    color: #000000;
+    font-size: 18px;
+    
+}
+.nav-links li:hover .mega-box {
+    transition: all 0.7s;
+    top:98%;
+    opacity: 1;
+    visibility: visible;
+}
+  
+  
+
+
+
+/* Video Background */
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
+}
+
+.video-background video {
+    min-width: 100%;
+    min-height: 100%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
+
+.overlay-content {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ffffff;
+}
+
+.overlay-content h1 {
+    letter-spacing: 2px;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+.btn_hero_section{
+    
+    
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin-top: 20px;
+    background: transparent;
+    border: solid 1px white;
+    
+}
+.btn_hero_section p{
+
+    font-size:20px;
+    padding: 10px 20px 10px 20px;
+    font-weight: bold;
+    text-align: center;
+
+}
+label #btn,
+    label #cancel {
+        color: rgb(255, 255, 255);
+        font-size: 20px;
+        float: left;
+        line-height: 40px;
+        margin-left: 10px;
+        cursor: pointer;
+        display: none;
+        position: absolute;
+        top:20px;
+        left:10px;
+        z-index:2;
+    }
+
+    #check {
+        display: none;
+    }
+
+
+    .hide-btn {
+        display: none;
+        }
+        #btn {
+        display: block;
+        color: rgb(255, 255, 255); /* Default color */
+        }
+    
+
+
+    .first_section{
+        height: 100vh;
+    
+    }
+    
+    @media (max-width: 944px) {
+        nav {
+            padding: 22px;
+        }
+        nav:hover {
+            background-color: white; /* Change background color to white on hover */
+            transition: all 0.5s ease; /* Smooth background color change with 0.5s duration */
+        }
+        nav .logo h1 {
+            margin-top: -10px;
+            font-size: 24px;
+        }
+        
+        nav .nav-links {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            background-color:rgb(255, 255, 255);
+            position: absolute;
+            top: 70px;
+            width: 100%;
+            left: 0;
+            z-index: 1;
+            height: 100vh;
+        }
+        
+    
+        nav ul {
+            flex-direction: column;
+        }
+        
+        nav ul li {
+            margin: 15px 0;
+            pointer-events: auto;
+        }
+        
+        nav ul li a {
+            font-size: 18px;
+            
+        }
+        
+        label #btn {
+            display: block;
+            color: rgb(255, 255, 255);
+        }
+        
+    
+        label #cancel{
+            color: black;
+        }
+    
+        #check:checked ~ .nav-links {
+            display: flex;
+        }
+        nav:hover label #btn {
+            color: black;
+        }
+        nav:hover {
+            background-color: transparent;
+        }
+    
+        nav:hover {
+            background-color: white; /* Change background color to white on hover */
+            transition: all 0.5s ease; /* Smooth background color change with 0.5s duration */
+        }
+        nav:hover ul li a {
+            color: rgb(0, 0, 0); 
+        }
+        
+        nav:hover ul li a::after {
+            background: rgb(0, 0, 0); 
+        }
+        
+        nav:hover .logo h1 {
+            color: rgb(0, 0, 0);
+        }
+    
+        #btn {
+            display: block;
+            color: rgb(255, 255, 255); /* Default color */
+        }
+    
+        .hide-btn {
+            display: none;
+        }
+    
+    }
+    @media (max-width: 768px) {
+        nav {
+            padding: 20px; /* Adjust padding if needed */
+        }
+        
+        nav .logo h1 {
+            margin-top: -5px;
+            font-size: 22px; /* Slightly smaller font size for smaller screens */
+        }
+        
+        nav .nav-links {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            background-color: rgb(255, 255, 255);
+            position: absolute;
+            top: 60px;
+            width: 100%;
+            left: 0;
+            z-index: 1;
+            height: 100vh;
+        }
+        
+        nav ul {
+            flex-direction: column;
+        }
+        
+        nav ul li {
+            margin: 10px 0;
+            pointer-events: auto;
+        }
+        
+        nav ul li a {
+            font-size: 16px; /* Slightly smaller font size for smaller screens */
+        }
+        
+        label #btn {
+            display: block;
+            color: rgb(255, 255, 255);
+        }
+        
+        label #cancel {
+            color: black;
+        }
+        
+        #check:checked ~ .nav-links {
+            display: flex;
+        }
+        
+        nav:hover {
+            background-color: transparent;
+        }
+        
+        nav:hover {
+            background-color: white; /* Change background color to white on hover */
+            transition: all 0.5s ease; /* Smooth background color change with 0.5s duration */
+        }
+        
+        nav:hover ul li a {
+            color: rgb(0, 0, 0);
+        }
+        
+        nav:hover ul li a::after {
+            background: rgb(0, 0, 0);
+        }
+        
+        nav:hover .logo h1 {
+            color: rgb(0, 0, 0);
+        }
+    }
+    
+    @media (max-width: 400px) {
+        nav {
+            padding: 15px; /* Further adjust padding for very small screens */
+        }
+        
+        nav .logo h1 {
+            margin-top: 0;
+            font-size: 20px; /* Further reduce font size for very small screens */
+        }
+        
+        nav .nav-links {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            background-color: rgb(255, 255, 255);
+            position: absolute;
+            top: 100px; /* Adjust top position if needed */
+            width: 100%;
+            left: 0;
+            z-index: 1;
+            height: 100vh;
+        }
+        
+        nav ul {
+            flex-direction: column;
+        }
+        
+        nav ul li {
+            margin: 8px 0; /* Further reduce margin for very small screens */
+            pointer-events: auto;
+        }
+        
+        nav ul li a {
+            font-size: 14px; /* Further reduce font size for very small screens */
+        }
+        
+        label #btn {
+            display: block;
+            color: rgb(255, 255, 255);
+        }
+        
+        label #cancel {
+            color: black;
+        }
+        
+        #check:checked ~ .nav-links {
+            display: flex;
+        }
+        
+        nav:hover {
+            background-color: transparent;
+        }
+        
+        nav:hover {
+            background-color: white; /* Change background color to white on hover */
+            transition: all 0.5s ease; /* Smooth background color change with 0.5s duration */
+        }
+        
+        nav:hover ul li a {
+            color: rgb(0, 0, 0);
+        }
+        
+        nav:hover ul li a::after {
+            background: rgb(0, 0, 0);
+        }
+        
+        nav:hover .logo h1 {
+            color: rgb(0, 0, 0);
+        }
+    }
+    @media (min-width: 944px) {
+        label #btn {
+            display: none; /* Hide the button */
+        }
+    }
+
+    
