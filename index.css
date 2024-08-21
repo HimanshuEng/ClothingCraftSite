@@ -4,8 +4,9 @@ h1 { font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-size: 24px; fo
 h1 { font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; } h3 { font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 15.4px; } p { font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px; } blockquote { font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-size: 17.5px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 25px; } pre { font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-size: 13px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 18.5714px; }
 h1 { font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; } h3 { font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 15.4px; } p { font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px; } blockquote { font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-size: 17.5px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 25px; } pre { font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-size: 13px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 18.5714px; }
 
+
 body {
-    font-family: fut, sans-serif;
+    /* font-family: fut, sans-serif; */
     margin: 0;
     padding: 0;
     overflow-x: hidden;
@@ -15,14 +16,14 @@ body {
 
 nav {
     z-index: 1;
-    /* position: fixed; */
+    position: fixed;
     top: 0;
     left: 0;
     transition: top 0.3s;
     background-color: transparent;
     text-align: center;
     width: 100%;
-    padding: 12px 0px 30px 0px;
+    padding: 12px 0px 7px 0px;
     box-sizing: border-box;
 }
 
@@ -62,6 +63,7 @@ nav ul li {
     margin: 0 9px;
 }
 nav ul li a {
+    
     color: rgb(255, 255, 255);
     text-decoration: none;
     font-size: 14px;
@@ -69,17 +71,16 @@ nav ul li a {
     position: relative;
 }
 
-nav ul li a::after {
+nav .line li a::after {
     content: "";
     display: block;
     width: 0;
-    height: 2px;
+    height: 1.5px;
     background: rgb(0, 0, 0);
-    transition: width .3s;
-    margin-top: 35px;
+    margin-top: 20px;
 }
 
-nav ul li a:hover::after {
+nav .line li a:hover::after {
     width: 100%;
 }
 
@@ -103,20 +104,20 @@ nav:hover .logo h1 {
 
 /* drop downmenu */
 
+
 .mega-box {
     position: absolute;
     left: 0;
     width: 100%;
     border-top: 1px solid #b9b9b9;
     top: 140px;
-    opacity: 0;
-    visibility: hidden;
+    opacity: 100%;
+    visibility: visible;
+
 }
 .content {
-    /* border-right: 1px solid black ; */
     background: #ffffff;
     padding: 25px 40px;
-    /* display: flex; */
     width: 100%;
     height:500px;
     max-height: 700px;
@@ -124,17 +125,68 @@ nav:hover .logo h1 {
     box-sizing: border-box; /* Include padding in width calculation */
 }
 
+
 .main {
 width:260px;
 overflow: hidden; 
-/* white-space: nowrap;  */
-word-wrap: break-word;
 text-overflow: ellipsis;
-border-right:1px solid  #b9b9b9;
-    
-    
-    
+border-right:1px solid  #b9b9b9;    
 }
+
+
+.maincontainer:active {
+    cursor: grabbing;
+}
+
+
+.maincontainer{
+    
+    cursor: grab;
+    scroll-behavior: smooth;
+    overflow-x: auto; 
+    overflow-y: auto;
+    display: flex;
+    gap: 2px; 
+    margin-left: 20%; 
+    margin-top: -29%;
+    height: 60vh;
+    overflow-y: hidden;
+    padding: 10px;
+    cursor: pointer;
+ 
+}
+.image-container{
+    display: inline-block; 
+    width: 250px;   
+    height: 300px; 
+    margin-left: 20px; /* Adds consistent spacing between each image container */
+    flex: 0 0 auto;
+    line-height: 100px; 
+     
+}
+.maincontainer::-webkit-scrollbar{
+    display: none;
+
+    width: 0;
+}
+
+.image-container:hover {
+    transform: scale(1.05); 
+}
+.image-container img {
+    
+    max-width: 100%; /* Ensure the image scales properly */
+    /* height: auto; */
+    margin-top: -9.5%;
+}
+
+.description {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #000000;
+}
+ 
+
 .main p {
     color: #000000;
     margin-left: -170px;
@@ -146,23 +198,20 @@ border-right:1px solid  #b9b9b9;
     margin-left: 0px;
 }
 
-.main .mega-links li a {
-    left: -35px;
+.main .mega-links li a{
+    left: -38px;
     padding: 10px 0px 0px 0px ;
     color: #000000;
     font-size: 18px;
-    /* width: 50%; */
+    
 }
 .nav-links li:hover .mega-box {
     transition: all 0.7s;
-    /* top: 54px; */
+    top:98%;
     opacity: 1;
     visibility: visible;
 }
-
-
-
-
+  
 
 /* Video Background */
 .video-background {
