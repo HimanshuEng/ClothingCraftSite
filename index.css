@@ -363,7 +363,7 @@ section {
     position: absolute;
     bottom: 100px;
     left: 50%;
-    top: 50%;
+    top: 67%;
     transform: translateX(-50%);
     text-align: center;
 
@@ -390,7 +390,7 @@ section {
     position: absolute;
     bottom: 100px;
     left: 50%;
-    top: 50%;
+    top: 65%;
     transform: translateX(-50%);
     text-align: center;
 
@@ -399,7 +399,7 @@ section {
     position: absolute;
     bottom: 100px;
     left: 50%;
-    top: 50%;
+    top: 65%;
     transform: translateX(-50%);
     text-align: center;
 
@@ -408,7 +408,7 @@ section {
     position: absolute;
     bottom: 100px;
     left: 50%;
-    top: 60%;
+    top: 74%;
     transform: translateX(-50%);
     text-align: center;
 
@@ -426,7 +426,7 @@ section {
     position: absolute;
     bottom: 100px;
     left: 50%;
-    top: 50%;
+    top: 65%;
     transform: translateX(-50%);
     text-align: center;
 
@@ -464,7 +464,7 @@ section {
 }
 .text-overlay {
     position: absolute;
-    top: 80%; /*Move down from the top*/
+    top: 84%; /*Move down from the top*/
     left: 50%; /* Move right from the left edge */
     transform: translate(50%, 50%); /* Center the element */
     z-index: 1; /* Ensure text is on top of the video */
@@ -475,7 +475,7 @@ section {
 
 .text-overlay1 {
     position: absolute;
-    top: 65%; /*Move down from the top*/
+    top: 85%; /*Move down from the top*/
     left: 50%; /* Move right from the left edge */
     transform: translate(50%, 50%); /* Center the element */
     z-index: 1; /* Ensure text is on top of the video */
