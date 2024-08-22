@@ -6,7 +6,7 @@ h1 { font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-size: 24px; fo
 
 
 body {
-    /* font-family: fut, sans-serif; */
+    font-family: 'Julius Sans One';
     margin: 0;
     padding: 0;
     overflow-x: hidden;
@@ -36,6 +36,7 @@ nav .logo {
 }
 
 nav .logo h1 {
+     font-family: 'Julius Sans One';
     color: #ffffff;
     margin-top: 10px;
     margin-bottom: 12px;
