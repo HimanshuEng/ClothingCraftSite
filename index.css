@@ -116,6 +116,18 @@ nav:hover .logo h1 {
     visibility: visible;
 
 }
+/* 
+.mega-box {
+    position: absolute;
+    left: 40px;
+    width: 100%;
+    border-top: 1px solid #b9b9b9;
+    top: 50px !important;
+    opacity: 100% !important;
+    visibility: visible !important;
+    /* z-index: 1111; */
+/*     display: block !important; */
+/*} */
 .content {
     background: #ffffff;
     padding: 25px 40px;
