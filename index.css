@@ -1179,7 +1179,22 @@ color: rgb(255, 255, 255); /* Default color */
         top: 70%; /* Move content further down on very small screens */
     }
 }
+@media (max-width:944px){
+    .mega-box{
+        display:none;
+    }
+}
 
+@media (max-width:768px){
+    .mega-box{
+        display:none;
+    }
+}
+@media (max-width:413px){
+    .mega-box{
+        display:none;
+    }
+}
 /* For screens up to 1200px */
 @media (max-width: 1200px) {
 .quotesarea {
