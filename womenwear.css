@@ -198,8 +198,21 @@ border-right:1px solid  #b9b9b9;
     opacity: 1;
     visibility: visible;
 }
-  
-
+ @media (max-width:944px){
+     .mega-box{
+         display:none;
+     }
+ } 
+@media( max-width:768px){
+    .mega-box{
+        display:none;
+    }
+}
+@media( max-width:413px){
+    .mega-box{
+        display:none;
+    }
+}
 /* Video Background */
 .video-background {
     position: absolute;
@@ -554,7 +567,7 @@ section {
     
     label #btn {
         display: block;
-        color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
     }
     
 
@@ -636,7 +649,7 @@ section {
     
     label #btn {
         display: block;
-        color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
     }
     
     label #cancel {
@@ -707,7 +720,7 @@ section {
     
     label #btn {
         display: block;
-        color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
     }
     
     label #cancel {
