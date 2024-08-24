@@ -1255,14 +1255,14 @@ top: 50%;
 }
 .seventh_section {
 position: relative; /* Ensure proper positioning context */
-height: 90vh; /* Adjust height */
+height: 70vh; /* Adjust height */
 margin-bottom: 40px; /* Adjust bottom margin */
 margin-top: 0%;
 }
 
 .seventh_section img {
 
-height:100vh!important; 
+height:81vh!important; 
 width: 100%!important;
 position: absolute;
 left: 0%!important;       
